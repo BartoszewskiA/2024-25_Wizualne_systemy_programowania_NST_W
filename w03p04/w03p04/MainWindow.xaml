@@ -1,0 +1,93 @@
+﻿<Window x:Class="w03p04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w03p04"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Text="APlikacja klikaczek"
+            Background="Aqua"
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.ColumnSpan="12"
+            Grid.RowSpan="2"
+            FontSize="25pt"
+            Padding="10pt"
+            TextAlignment="Center">
+        </TextBlock>
+        <TextBlock
+            Text="Informatyka sem 3"
+            Background="Aqua"
+            Grid.Column="0"
+            Grid.Row="11"
+            Grid.ColumnSpan="12"
+            Grid.RowSpan="2"
+            FontSize="15pt"
+            Padding="3pt"
+            TextAlignment="Right">
+        </TextBlock>
+        <Button
+            Grid.Column="0"
+            Grid.Row="4"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="5"
+            Content="-"
+            FontSize="55pt"
+            Margin="10pt" Click="Button_Click"
+            />
+        <Button
+          Grid.Column="9"
+          Grid.Row="4"
+          Grid.ColumnSpan="3"
+          Grid.RowSpan="5"
+          Content="+"
+          FontSize="55pt"
+          Margin="10pt" Click="Button_Click_1"
+          />
+
+        <TextBlock
+            x:Name="tb_licznik"
+           Text="0"
+           Background="Aqua"
+           Grid.Column="4"
+           Grid.Row="5"
+           Grid.ColumnSpan="4"
+           Grid.RowSpan="3"
+           FontSize="55pt"
+           Padding="3pt"
+           TextAlignment="Center">
+        </TextBlock>
+
+    </Grid>
+</Window>
